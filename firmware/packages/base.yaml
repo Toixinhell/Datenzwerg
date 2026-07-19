@@ -23,10 +23,10 @@ logger:
 
 wifi:
   networks:
-    - ssid: 39C3
-      eap:
-        username: outboundonly
-        password: outboundonly
+#    - ssid: 39C3
+#      eap:
+#        username: outboundonly
+#        password: outboundonly
     - ssid: 39C3-open
 
     # fallback from secrets

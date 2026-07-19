@@ -26,6 +26,8 @@ To flash your own Datenzwerg, navigate to the `firmware` directory, then
    - `battery`: firmware optimized for deployment with a battery; disables uptime, CO2 sensor and MQTT but enables deepsleep
    - `sensortest`: firmware for testing all sensors; enables a webserver to check tracking
 
+esphome -s name toixGnome run datenzwerg-sensortest.yaml
+
 ### Models
 
 The gnome model files are based on https://www.printables.com/model/260908-garden-gnome by [Sci3D](https://www.printables.com/@Sci3D), released under CC-BY.
