@@ -1,0 +1,30 @@
+substitutions:
+  name: gnome
+
+esphome:
+  name: "datenzwerg-${name}-i2c-scan"
+
+esp8266:
+  board: d1_mini
+  framework:
+    version: recommended
+
+logger:
+
+wifi:
+  networks:
+    - ssid: !secret wifi_ssid
+      password: !secret wifi_psk
+
+mdns:
+  disabled: true
+
+i2c:
+  scl: D1
+  sda: D2
+  id: bus_a
+  scan: true
+  frequency: 50kHz
+
+web_server:
+  port: 80
