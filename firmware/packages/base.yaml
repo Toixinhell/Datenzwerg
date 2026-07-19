@@ -23,11 +23,11 @@ logger:
 
 wifi:
   networks:
-#    - ssid: 39C3
+#    - ssid: hagbartNet
 #      eap:
 #        username: outboundonly
 #        password: outboundonly
-    - ssid: 39C3-open
+#    - ssid: 39C3-open
 
     # fallback from secrets
     - ssid: !secret wifi_ssid
